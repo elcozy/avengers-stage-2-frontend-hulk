@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <title>EstyHotels | Landing Page</title>
     <link rel="stylesheet" href="main.css">
 </head>
@@ -105,13 +105,13 @@
     <section class="rooms" id="room">
         <div class="container">
             <div class="text-right icon-next">
-                <a href="#"><img src="assets/icons/arrow-right.svg" />View More</a>
+                <a href="rooms.html"><img src="assets/icons/arrow-right.svg" />View More</a>
             </div>
             <div class="rooms_header">
                 <h1>Our Exquisite Room</h1>
                 <p>Esty Hotel provides you with the best comfort and relaxation. Pick a room that suit your taste</p>
             </div>
-            <div class="ruby_rooms">
+            <div class="ruby_rooms each_room">
                 <div class="ruby_img"></div>
                 <div class="ruby_content">
                     <h4>RUBY ROOM</h4>
@@ -123,9 +123,9 @@
                     </div>
                 </div>
             </div>
-            <div class="diamond_room">
+            <div class="diamond_room each_room">
 
-                <div class="diamond_content">
+                <div class="diamond_content ">
                     <h4>Diamond ROOM</h4>
                     <p>This is simply warm and elegant. The cosy
                         bathroom is delightful and well adorned</p>
@@ -141,7 +141,7 @@
     </section>
 
     <!-- Facilities secction -->
-    <section class="facilities container" id="services">
+    <section class="facilities container section_spacing" id="services">
         <header>
             <h2 class="heading">OUR FACILITIES</h2>
             <p class='paragraph'>
@@ -155,14 +155,14 @@
             <ul>
                 <li>
                     <img class="facilities-image" src="./assets/pool.jpg" />
-                    <p class="facility_name">SWIMMING POOL</p>
+                    <h2 class="facility_name">SWIMMING POOL</h2>
                     <p class="facility_desc">
                         Where our guest can take a swim in our swimming pool
                     </p>
                 </li>
                 <li>
                     <img class="facilities-image" src="./assets/spa.jpg" />
-                    <p class="facility_name">SPA</p>
+                    <h2 class="facility_name">SPA</h2>
                     <p class="facility_desc">
                         Where our guest can have a soothing spa experience
                     </p>
@@ -170,7 +170,7 @@
                 <li>
                     <img class="facilities-image" src="./assets/restaurant.png" />
                     <div class="facility">
-                        <p class="facility_name">RESTAURANT</p>
+                        <h2 class="facility_name">RESTAURANT</h2>
                         <p class="facility_desc">
                             Our guest can be entertained in our well desgined restaurant
                         </p>
@@ -183,19 +183,19 @@
             <ul>
                 <li>
                     <img class="facilities-image" src="./assets/bar.jpg" />
-                    <p class="facility_name">BAR</p>
+                    <h2 class="facility_name">BAR</h2>
                     <p class="facility_desc">
                         Where you can relax and serve the best drinks
                     </p>
                 </li>
                 <li>
                     <img class="facilities-image" src="./assets/lounge.jpg" />
-                    <p class="facility_name">LOUNGE</p>
+                    <h2 class="facility_name">LOUNGE</h2>
                     <p class="facility_desc">Beautiful and well conducive lounge</p>
                 </li>
                 <li>
                     <img class="facilities-image" src="./assets/meeting-room.png" />
-                    <p class="facility_name">MEETING ROOM</p>
+                    <h2 class="facility_name">MEETING ROOM</h2>
                     <p class="facility_desc">
                         Hold your seminar,board meetings, training at our 50 seater
                         meeting room
@@ -215,7 +215,7 @@
 
 
     <!-- Contact us section -->
-    <section class="cta">
+    <section class="cta" id="contact">
         <h1 class="heading">CONTACT US</h1>
 
         <div class="form_wrapper">
@@ -233,7 +233,7 @@
                         <input type="email" name="email" class="input" id="email" placeholder="Your Email" />
                     </div>
 
-                    <button class="btn btn--secondary btn_small">SEND</button>
+                    <button class="btn btn--secondary btn_small btn_form">SEND</button>
                 </form>
             </div>
         </div>
@@ -257,7 +257,7 @@
 
             <div class="column">
                 <ul>
-                    <span>HELPFUL LINKS</span>
+                    <h2 class="footer_heading">HELPFUL LINKS</h2>
                     <li>
                         <a href="#">Rooms</a>
                     </li>
@@ -270,15 +270,14 @@
                     <li>
                         <a href="#">Meeting rooms</a>
                     </li>
-                    <p>
-
-                        <span>Follow Us</span>
-                    </p>
-                    <p>
-                        <a href="facebook.com"><img src="./assets/icons/facebook.svg" width="50" height="70" alt=""></a>
-                        <a href="index.html"><img src="./assets/icons/instagram.svg" width="50" height="70" alt=""></a>
-                        <a href="index.html"><img src="./assets/icons/twitter.svg" width="50" height="70" alt=""></a>
-                    </p>
+                    <li class="social_links">
+                        <h2 class="footer_heading">Follow Us</h2>
+                        <p>
+                            <a href="facebook.com"><img src="./assets/icons/facebook.svg" width="50" height="70" alt=""></a>
+                            <a href="index.html"><img src="./assets/icons/instagram.svg" width="50" height="70" alt=""></a>
+                            <a href="index.html"><img src="./assets/icons/twitter.svg" width="50" height="70" alt=""></a>
+                        </p>
+                    </li>
                 </ul>
 
             </div>

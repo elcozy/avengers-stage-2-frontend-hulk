@@ -11,256 +11,17 @@ body {
   margin: 0;
   padding: 1rem;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.5;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
   color: #2c2c2c;
   font-size: 1.6rem;
 }
 
-.container {
-  width: 1366px;
-  max-width: calc(100% - 20px);
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-/* style for room section*/
-
-.ruby_rooms, .diamond_room {
-  display: flex;
-}
-
-.rooms {
-  background-color: #2C2C2C;
-  color: #fff;
-  padding: 70px 0;
-}
-
-.rooms a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.rooms_header {
-  text-align: center;
-}
-
-.rooms_header h1 {
-  font-size: 1.5em;
-  font-weight: bold;
-  font-style: normal;
-  text-transform: uppercase;
-  margin: 0;
-}
-
-.rooms p {
-  font-size: 1.2em;
-}
-
-.ruby_img {
-  width: 831px;
-  height: 400px;
-  background-image: url('assets/ruby-room.jpg');
-  background-size: cover;
-  position: relative;
-  transition: 2s;
-  margin-right: auto;
-}
-.ruby_img:hover {
-  transition: 2s;
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-}
-.diamond_img {
-  width: 831px;
-  height: 400px;
-  background-image: url(assets/diamond-room.jpg);
-  background-size: cover;
-  margin-left: auto;
-  transition: 2s;
-}
-
-.diamond_img:hover {
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-  transition: 2s;
-}
-
-.ruby_rooms {
-  margin-top: 80px;
-}
-
-.ruby_content {
-  text-align: left;
-  /* width:800px; */
-  padding: 40px;
-}
-.diamond_content {
-  text-align: right;
-  /* width: 800px; */
-  padding: 62px 59px 62px;
-}
-
-.ml-auto {
-  margin-left: auto;
-}
-
-.rooms h4 {
-  margin: 0;
-  line-height: 37px;
-  font-size: 1.5em;
-  text-transform: uppercase;
-}
-
-.plan_per_night {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 44px;
-}
-
-.rooms .button {
-  background: #D66939;
-  border: 1px solid #2C2C2C;
-  box-sizing: border-box;
-  padding: 15px 32px;
-  font-weight: bold;
-  color: #2C2C2C;
-  text-decoration: none;
-  width: max-content;
-}
-
-.rooms .button:hover {
-  color: #ffffff;
-  transition: 2s;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.icon-next {
-  margin-bottom: 12px;
-}
-
-.icon-next img {
-  width: 52px;
-  margin-right: 12px;
-  position: relative;
-  top: 7px;
-}
-
-.button a {
-  color: #2c2c2c;
-}
-.button a:hover {
-  transform: scaleY(1.1);
-  transition: 2s;
-  color: #fff;
-}
-
-@media(max-width:700px) {
-  .ruby_img {
-    width: 100%;
-    height: 300px;
-    background-size: cover;
-  }
-  .diamond_img {
-    width: 100%;
-    height: 300px;
-    background-size: cover;
-  }
-  .ruby_rooms {
-    flex-direction: column;
-  }
-  .diamond_room {
-    flex-direction: column-reverse;
-  }
-  .ruby_content, .diamond_content {
-    text-align: center;
-    padding: 20px 0px;
-    /* width:100%; */
-  }
-  .rooms .button {
-    margin: auto
-  }
-}
-
-/* Header */
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
-  opacity: 0.7;
-}
-
-.header p {
-  margin: 10px;
-}
-
-.right {
-  display: flex;
-  justify-content: space-between;
-}
-
-.right img {
-  width: 2rem;
-}
-
-/* Header Ends Here */
-
-/* Facilities section */
-
-/* .facilities {
-  margin: 5rem auto;
-} */
-
-.heading {
-  text-align: center;
+h1,h2,h3 {
   font-weight: 600;
-  margin: 10px 0;
-  color: rgb(65, 62, 62);
 }
-
-.paragraph {
-  color: rgb(78, 77, 77);
-  text-align: center;
-}
-
-.facility_name {
-  color: black;
-  margin: 10px 0;
-}
-
-.facilities_list ul {
-  padding: 0;
-  list-style: none;
-  display: flex;
-  align-content: center;
-  justify-content: space-between;
-}
-
-.facilities-image {
-  width: 100%;
-}
-
-.facilities_list ul li {
-  width: 400px;
-  margin: 15px 5px;
-  text-align: center;
-}
-
-.facility_name {
-  font-weight: 550;
-  color: rgb(65, 62, 62);
-}
-
-.facility_desc {
-  margin: 5px 0;
-  color: rgb(78, 77, 77);
-  font-weight: 500;
-}
-
+/* Utillity Classess */
 .button {
   display: flex;
   justify-content: center;
@@ -314,7 +75,50 @@ body {
   border: 3px solid white;
 }
 
+.container {
+  width: 1366px;
+  max-width: calc(100% - 20px);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
 
+
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  opacity: 0.7;
+}
+
+.header p {
+  margin: 10px;
+}
+
+.right {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right img {
+  width: 2rem;
+}
+
+.heading {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+  color: rgb(65, 62, 62);
+}
+
+.paragraph {
+  color: rgb(78, 77, 77);
+  text-align: center;
+}
+
+
+/* Top navbar */
 .subnav {
   margin: 0px;
   /* height: 5vh; */
@@ -332,6 +136,7 @@ body {
   margin: 5px 0;
 }
 
+/* Hero Section */
 .container-1 {
   position: relative;
   mix-blend-mode: normal;
@@ -340,9 +145,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  /* overflow-y: scroll;
-	scroll-behavior: smooth;
-	scroll-snap-type: y mandatory; */
 }
 
 .left-hand {
@@ -403,7 +205,6 @@ body {
   text-decoration: none;
   color: #FFF;
   text-transform: uppercase;
-  font-family: calibri;
   font-style: normal;
 }
 
@@ -421,7 +222,6 @@ body {
   margin: 5px;
   color: #fff;
   font-size: 16px;
-  font-family: calibri;
   font-style: normal;
   text-decoration: none;
 }
@@ -478,15 +278,6 @@ body {
   top: 250px;
 }
 
-/* h1 {
-	position: absolute;
-	left: 650px;
-	top: 245px;
-	font-weight: 300;
-	color: #FFFFFF;
-	font-size: 28px;
-} */
-
 .horizonLine {
   border-left: 2px solid #D66939;
   height: 90px;
@@ -516,7 +307,6 @@ body {
   padding: 2px 20px;
   border: 2px solid #D66939;
   border-radius: 2px;
-  font-family: calibri;
   font-weight: 200;
 }
 .hero_btn:hover{
@@ -525,17 +315,13 @@ body {
 
 .footnav {
   flex-flow: row wrap;
-  /* height: 15vh; */
   background: #D66939;
   position: absolute;
-  /* left: 600px; */
-  /* top: 610px; */
   bottom: -50px;
   right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /*margin: -10px;*/
   padding: 10px;
 }
 
@@ -554,7 +340,6 @@ body {
 
 .check-out {
   position: relative;
-  /* left: -100px; */
   margin: 20px;
   border: 2px solid #fff;
   border-radius: 2px;
@@ -614,6 +399,293 @@ body {
 .browse button {
   padding: 20px;
 }
+
+
+/* About us section */
+
+.about-us {
+  margin: 10rem 0;
+}
+
+.about_heading{
+  font-weight: 700;
+  color: #2c2c2c; 
+  margin-bottom: 1rem; 
+}
+
+.about-us .button {
+  margin: 0;
+  display: block;
+}
+
+.about-us button {
+  width: 300px;
+  max-width: 100%;
+}
+.section_spacing {
+  margin: 10rem auto;
+}
+
+
+/* style for room section*/
+
+.ruby_rooms, .diamond_room {
+  display: flex;
+}
+
+.rooms {
+  background-color: #2C2C2C;
+  color: #fff;
+  padding: 70px 0;
+}
+
+.rooms a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.rooms_header {
+  text-align: center;
+}
+
+.rooms_header h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.rooms p {
+  font-size: 1.2em;
+}
+
+.ruby_img {
+  width: 83rem;
+  height: 40rem;
+  background-image: url('assets/ruby-room.jpg');
+  background-size: cover;
+  position: relative;
+  transition: .2s;
+  margin-right: auto;
+}
+.ruby_img:hover {
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
+}
+.diamond_img {
+  width: 83rem;
+  height: 40rem;
+  background-image: url(assets/diamond-room.jpg);
+  background-size: cover;
+  margin-left: auto;
+  transition: .2s;
+}
+
+.diamond_img:hover {
+  -ms-transform: scale(0.98);
+  transform: scale(0.98);
+}
+
+.ruby_rooms {
+  margin-top: 80px;
+}
+
+.ruby_content {
+  text-align: left;
+  padding: 40px;
+}
+.diamond_content {
+  text-align: right;
+  padding: 62px 59px 62px;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.rooms h4 {
+  margin: 0;
+  line-height: 37px;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.plan_per_night {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.rooms .button {
+  background: #D66939;
+  border: 1px solid #2C2C2C;
+  box-sizing: border-box;
+  padding: 15px 32px;
+  font-weight: bold;
+  color: #2C2C2C;
+  text-decoration: none;
+  width: max-content;
+}
+
+.rooms .button:hover {
+  color: #ffffff;
+  transition: 2s;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.icon-next {
+  margin-bottom: 12px;
+}
+
+.icon-next img {
+  width: 52px;
+  margin-right: 12px;
+  position: relative;
+  top: 7px;
+}
+
+.button a {
+  color: #2c2c2c;
+}
+.button a:hover {
+  transform: scaleY(1.1);
+  transition: 2s;
+  color: #fff;
+}
+
+
+/* Facilities Section */
+
+.facility_name {
+  color: black;
+  margin: 10px 0;
+}
+
+.facilities_list ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.facilities-image {
+  width: 100%;
+}
+
+.facilities_list ul li {
+  margin: 15px 5px;
+  text-align: center;
+  width: 370px;
+  transition: all .3s;
+}
+.facilities_list ul li:hover {
+  padding: 1rem;
+  background-color: #f2f2f2;
+  box-shadow: 1px 2px 7px #7e7e7e;
+}
+
+.facility_name {
+  font-weight: 550;
+  color: rgb(65, 62, 62);
+}
+
+.facility_desc {
+  margin: 5px 0;
+  color: rgb(78, 77, 77);
+  font-weight: 500;
+}
+
+/* contact us section */
+.cta {
+  margin-top: 10rem;
+}
+.form_wrapper {
+  background-color: #d66939;
+  padding: 5rem;
+}
+
+.form_wrapper h2 {
+  font-weight: 600;
+  font-size: 3.5rem;
+  color: #fff;
+  margin: 4rem 0;
+}
+
+.form-control:first-child {
+  margin-bottom: 4rem;
+}
+
+.input {
+  width: 40rem;
+  padding: 4px 20px;
+  height: 60px;
+  border: #f5f5f5 5px solid;
+  background: none;
+  border: 3px solid #ffffff;
+  color: #fff;
+  outline: none;
+}
+.btn_form {
+  margin-top: 4rem;
+}
+.input::placeholder {
+  color: #fff;
+}
+
+.input:focus {
+  outline-color: none;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  flex-flow: row wrap;
+}
+
+.column ul {
+  padding: 0;
+  margin: 0;
+}
+
+/* Footer section */
+
+.footer {
+  /* height: 100vh; */
+  color: #2C2C2C;
+  font-weight: bolder;
+  box-sizing: border-box;
+}
+
+.footer .img {
+  padding-right: .5rem;
+}
+
+.footer_heading {
+  color: #D66939;
+  margin-bottom: .1rem;
+  /* font-size: 2rem; */
+}
+
+.footer a {
+  display: inline-block;
+  text-decoration: none;
+  color: #2c2c2c;
+}
+
+.footer li {
+  text-decoration: none;
+  display: block;
+  list-style-type: none;
+  margin: 1rem 0;
+}
+
+/* Media Queries */
 
 @media screen and (max-width: 720px) {
   body {
@@ -766,16 +838,45 @@ body {
     font-size: 14px;
   }
   .check-out {
-    /* top: -10px; */
-    /* left: 90px; */
     margin: 0px;
     border-radius: 2px;
     padding: .2rem 1rem;
     text-align: center;
     font-size: 1.4rem;
   }
+  
+  .ruby_img {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+  }
+  .diamond_img {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+  }
+  .ruby_rooms {
+    flex-direction: column;
+  }
+  .diamond_room {
+    flex-direction: column-reverse;
+  }
+  .each_room {
+    margin-top: 5rem;
+      box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+                  0 2px 2px rgba(0,0,0,0.12), 
+                  0 4px 4px rgba(0,0,0,0.12), 
+                  0 8px 8px rgba(0,0,0,0.12),
+                  0 16px 16px rgba(0,0,0,0.12);
+  }
+  .ruby_content, .diamond_content {
+    text-align: center;
+    padding: 20px 0px;
+  }
+  .rooms .button {
+    margin: auto
+  }
 }
-
 
 @media screen and (max-width: 600px) {
   .facilities_list ul {
@@ -786,10 +887,19 @@ body {
   .facilities_list ul li {
     width: 30rem;
     text-align: center;
+    margin-top: 5rem;
+    transition: all .3s;
+    
+  }
+
+  .facilities_list ul li:hover {
+    padding: 1rem;
+    background-color: #f2f2f2;
+    box-shadow: 1px 2px 7px #7e7e7e;
   }
   .facilities {
     width: 30rem;
-    margin: auto;
+    /* margin: auto; */
     text-align: center;
   }
   .browse-button {
@@ -799,73 +909,9 @@ body {
   .facilities-image {
     width: 100%;
   }
-}
 
-/* About us section */
-
-.about-us {
-  margin: 10rem 0;
-}
-
-.about_heading{
-  font-weight: 700;
-  color: #2c2c2c; 
-  margin-bottom: 1rem; 
-}
-
-.about-us .button {
-  margin: 0;
-  display: block;
-}
-
-.about-us button {
-  width: 300px;
-  max-width: 100%;
-}
-.section_spacing {
-  margin: 10rem auto;
-}
-/* contact us section */
-.cta {
-  margin-top: 10rem;
-}
-.form_wrapper {
-  background-color: #d66939;
-  padding: 5rem;
-}
-
-.form_wrapper h2 {
-  font-weight: 600;
-  font-size: 3.5rem;
-  color: #fff;
-  margin: 4rem 0;
-}
-
-.form-control:first-child {
-  margin-bottom: 4rem;
-}
-
-.input {
-  width: 40rem;
-  padding: 4px 20px;
-  height: 60px;
-  border: #f5f5f5 5px solid;
-  background: none;
-  border: 3px solid #ffffff;
-  color: #fff;
-  outline: none;
-}
-
-.input::placeholder {
-  color: #fff;
-}
-
-.input:focus {
-  outline-color: none;
-}
-
-@media (max-width: 500px) {
   .form_wrapper {
+    text-align: center;
     padding: 5rem 2rem;
   }
   .form input {
@@ -879,73 +925,17 @@ body {
   .rooms .button {
     margin: auto
   }
-}
 
-/*This is the code for FOOTER SECTION*/
-
-/* .column{
-	float: left;
-	width: 50%;
-}
-.row::after {
-	content: "";
-	display: table;
-	clear: both;
-} */
-
-.row {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
-  flex-flow: row wrap;
-}
-
-.column ul {
-  padding: 0;
-  margin: 0;
-}
-
-#ft {
-  background-color: #ffffff;
-  padding-top: 20px;
-  padding-left: 10px;
-  border-radius: 20px;
-  /*color: #2C2C2C;
-	font-family: calibri;*/
-}
-
-.footer {
-  height: 100px;
-  font-family: calibri;
-  color: #2C2C2C;
-  font-weight: bolder;
-  box-sizing: border-box;
-}
-
-.footer .img {
-  padding-right: 5px;
-}
-
-.footer span {
-  color: #D66939;
-  font-size: 20px;
-}
-
-.footer a {
-  display: inline-block;
-  text-decoration: none;
-  color: #2c2c2c;
-}
-
-.footer li {
-  text-decoration: none;
-  display: block;
-  list-style-type: none;
-}
-
-@media screen and (max-width: 600px) {
   .column {
     width: 100%;
-    text-align: center;
+    text-align: left;
+  }
+  .btn_form {
+    margin-top: 4rem;
+    width: 80%;
+  }
+
+  li.social_links {
+    margin-top: 5rem;
   }
 }
