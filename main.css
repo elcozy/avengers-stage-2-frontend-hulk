@@ -254,43 +254,20 @@ h1,h2,h3 {
 .hero__main::after {
   content: '';
   display: inline-block;
-  width: 100px;
+  width: 10rem;
   height: 2px;
   background-color: #D66939;
   position: relative;
   top: -5px;
-  margin: 0 15px;
-}
-
-.horizontalLine {
-  border-left: 2px solid #D66939;
-  height: 90px;
-  margin: 15px;
-  transform: rotate(90deg);
-  transform-origin: 0 0;
-  position: absolute;
-  left: 610px;
-  top: 250px;
-}
-
-.horizonLine {
-  border-left: 2px solid #D66939;
-  height: 90px;
-  margin: 15px;
-  transform: rotate(90deg);
-  transform-origin: 0 0;
-  position: absolute;
-  left: 850px;
-  top: 250px;
+  margin: 0 1.5rem;
 }
 
 .hero p {
-
   text-align: center;
   color: #fff;
   font-size: 5rem;
   margin: 2% 0;
-  font-family:  Nottingham sans-serif;
+  font-family:  Nottingham serif;
 }
 
 .hero_btn {
@@ -697,7 +674,7 @@ h1,h2,h3 {
     user-select: none;
     color: #D66939;
     font-size: 28px;
-    font-family: Nottingham Bold;
+    font-family: Nottingham serif;
     font-style: normal;
   }
   .menu-bar p strong {
@@ -782,23 +759,9 @@ h1,h2,h3 {
     left: 200px;
   }
 
-  .horizontalLine {
-    border-left: 2px solid #D66939;
-    height: 50px;
-    margin: 15px;
-    left: 100px;
-    top: 150px;
-  }
-  .horizonLine {
-    border-left: 2px solid #D66939;
-    height: 50px;
-    margin: 15px;
-    left: 290px;
-    top: 150px;
-  }
   .hero p {
     display: block;
-    font-size: 30px;
+    font-size: 3rem;
     margin-left: 20px;
     text-align: center;
   }
