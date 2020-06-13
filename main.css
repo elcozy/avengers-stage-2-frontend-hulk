@@ -9,7 +9,7 @@ html {
 
 body {
   margin: 0;
-  /* padding: 1rem; */
+  padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
@@ -859,7 +859,11 @@ h1,h2,h3 {
 
   .column {
     width: 100%;
-    text-align: left;
+    text-align: center;
+  }
+  .column ul {
+    margin: 5rem auto;
+    text-align: center;
   }
   .btn_form {
     margin-top: 4rem;
@@ -870,6 +874,5 @@ h1,h2,h3 {
     margin-top: 5rem;
     margin-left: 0;
     padding: 0;
-    text-align: left;
   }
 }
