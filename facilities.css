@@ -1,3 +1,9 @@
+/* reset */
+
+a {
+  text-decoration: none;
+}
+
 h1 {
   text-align: center;
 }
@@ -8,7 +14,6 @@ h1 {
 
 .gname {
   color: black;
-  font-size: 1.5em;
   margin: 10px 0;
 }
 
@@ -23,18 +28,25 @@ h1 {
 
 .gallery-image {
   width: 100%;
-  max-height: 200px;
+  max-height: 20rem;
 }
 
 .services ul li {
-  max-height: 400px;
-  width: 380px;
-  margin: 15px 5px;
+  max-height: 40rem;
+  width: 38rem;
+  margin: 3rem .5rem;
   text-align: center;
+  transition: all .3s;
+}
+
+.services ul li:hover {
+  padding: 1rem;
+  background-color: #f2f2f2;
+  box-shadow: 1px 2px 7px #7e7e7e;
 }
 
 .gname {
-  font-weight: 550;
+  font-weight: 600;
   color: rgb(65, 62, 62);
 }
 
@@ -58,5 +70,5 @@ h1 {
 }
 
 .arrow img {
-  width: 30px;
+  width: 3rem;
 }
